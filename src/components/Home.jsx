@@ -1,7 +1,10 @@
 import { SiLeetcode } from "react-icons/si";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom'
+
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className='flex flex-col items-center justify-center sm:flex-row pt-10 gap-10'>
@@ -135,7 +138,7 @@ const Home = () => {
         </div>
       </div>
       <div className="m-10 flex justify-center animate-bounce hover:cursor-pointer">
-        <a href="projects"><IoArrowDownCircleOutline className="text-3xl" /></a>
+        <IoArrowDownCircleOutline className="text-3xl" onClick={()=>{navigate("/projects")}} />
       </div>
 
     </div>
