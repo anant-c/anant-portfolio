@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <div className='flex flex-col items-center justify-center sm:flex-row pt-10 gap-10'>
-        <img className='w-[365px] h-[365px] rounded-2xl sm:w-[250px] sm:h-[275px]' src="src/assets/toji.jpg" alt="Description" />
+        <img className='w-[365px] h-[365px] rounded-2xl sm:w-[250px] sm:h-[275px]' src="/assets/toji.jpg" alt="Description" />
         <div className='gap-4 flex flex-col'>
           <p className='font-bold text-4xl md:text-4xl lg:text-5xl'>Hi, i'm anant 👋</p>
           <p>
@@ -34,7 +34,7 @@ const Home = () => {
       <div>
         <a target="_blank" className="py-4 px-4 border border-zinc-800 rounded-md flex flex-col gap-2 my-4 hover:scale-105 transition-all" href="https://www.iitdh.ac.in/">
           <div className="flex gap-3 items-center">
-            <img alt="IIT Dharward" loading="lazy" width="45" height="45" className="rounded-full" src="src\assets\iit.png" />
+            <img alt="IIT Dharward" loading="lazy" width="45" height="45" className="rounded-full" src="/assets/iit.png" />
             <h2 className="font-bold underline hover:no-underline text-lg">
               IIT Dharwad
             </h2>
@@ -43,7 +43,7 @@ const Home = () => {
         </a>
         <a target="_blank" className="py-4 px-4 border border-zinc-800 rounded-md flex flex-col gap-2 my-4 hover:scale-105 transition-all" href="https://www.samsungprism.com/">
           <div className="flex gap-3 items-center">
-            <img alt="PRISM Logo" loading="lazy" width="45" height="45" className="rounded-full" src="src\assets\prism.jpg" />
+            <img alt="PRISM Logo" loading="lazy" width="45" height="45" className="rounded-full" src="/assets/prism.jpg" />
             <h2 className="font-bold underline hover:no-underline text-lg">
               Samsung Prism
             </h2>
@@ -57,7 +57,7 @@ const Home = () => {
       <div className='grid grid-flow-row grid-cols-1 gap-2 mb-17 md:grid-cols-2 '>
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\votp.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/votp.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl">Voice OTP Authentication</h1>
               <p className="bg-gray-200 text-gray-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">
@@ -98,7 +98,7 @@ const Home = () => {
 
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\traffic-sign.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/traffic-sign.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl"> Traffic Sign Advisory & Navigation System</h1>
               <p className="bg-gray-200 text-gray-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">

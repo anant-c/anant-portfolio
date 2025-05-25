@@ -5,7 +5,7 @@ const Projects = () => {
     <div className='grid grid-flow-row grid-cols-1 gap-2 mb-17 md:grid-cols-2 '>
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\votp.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/votp.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl">Voice OTP Authentication</h1>
               <p className="bg-gray-200 text-gray-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">
@@ -46,7 +46,7 @@ const Projects = () => {
 
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\traffic-sign.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/traffic-sign.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl"> Traffic Sign Advisory & Navigation System</h1>
               <p className="bg-gray-200 text-gray-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">
@@ -85,7 +85,7 @@ const Projects = () => {
 
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\crud.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/crud.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl"> CRUD E-Commerce</h1>
               <p className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">
@@ -126,7 +126,7 @@ const Projects = () => {
 
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\batteryfy.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/batteryfy.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl"> Batteryfy</h1>
               <p className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">
@@ -155,7 +155,7 @@ const Projects = () => {
 
         <div className="pt-10 w-full transition-all hover:scale-105">
           <div className="flex flex-col mb-6">
-            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="src\assets\todo.png" />
+            <img alt="Voice Auth" loading="lazy" width="370" height="370" className="rounded-sm hover:blur-xs transition-all" src="/assets/todo.png" />
             <div className="flex justify-between items-center">
               <h1 className="font-bold mb-3 text-xl">The OG TODO</h1>
               <p className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-1 font-bold border border-gray-800">

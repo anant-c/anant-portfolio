@@ -13,7 +13,7 @@ const Navbar = () => {
             <button className={`${pathname === "/contact" ? "font-bold underline" : ""} hover:cursor-pointer`} onClick={()=>{navigate("/contact")}}>Contact</button>
         </div>
         <div className='w-[60px] h-[60px] flex items-center'>
-            <img src="src\assets\icon.gif" />
+            <img src="/assets/icon.gif" />
         </div>
     </div>
   )
