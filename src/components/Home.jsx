@@ -35,6 +35,15 @@ const Home = () => {
 
       <h1 className="text-3xl font-bold pt-10 ">Work experience</h1>
       <div>
+        <a target="_blank" className="py-4 px-4 border border-zinc-800 rounded-md flex flex-col gap-2 my-4 hover:scale-105 transition-all" href="https://www.aganitha.ai">
+          <div className="flex gap-3 items-center">
+            <img alt="Aganitha Logo" loading="lazy" width="45" height="45" className="rounded-full" src="/assets/aganitha.png" />
+            <h2 className="font-bold underline hover:no-underline text-lg">
+              Aganitha Cognitive Solutions
+            </h2>
+          </div>
+          <h3>Jr Developer Intern | Sep 2025 - Ongoing | Onsite | Internship</h3>
+        </a>
         <a target="_blank" className="py-4 px-4 border border-zinc-800 rounded-md flex flex-col gap-2 my-4 hover:scale-105 transition-all" href="https://www.iitdh.ac.in/">
           <div className="flex gap-3 items-center">
             <img alt="IIT Dharward" loading="lazy" width="45" height="45" className="rounded-full" src="/assets/iit.png" />
