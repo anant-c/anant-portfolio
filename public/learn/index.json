@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "sample",
+    "title": "Sample Talk: Core Storage Systems",
+    "kind": "playlist",
+    "channel": "Sample Channel",
+    "source_url": "https://www.youtube.com/playlist?list=sample-talk",
+    "videos": 2,
+    "duration_min": 24,
+    "added": "2026-10-05",
+    "summary": "The fundamental data structures underlying modern systems, bridging the gap between CPU caches and secondary storage.",
+    "tags": [
+      "hash tables",
+      "b-trees",
+      "databases",
+      "data structures",
+      "performance"
+    ],
+    "accent": "#4285d7",
+    "cover": "/learn/sample/cover.svg",
+    "unlisted": true
+  }
+]

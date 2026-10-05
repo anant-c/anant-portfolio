@@ -7,6 +7,7 @@ import 'lenis/dist/lenis.css'
 const Home = lazy(() => import('./components/Home'))
 const Projects = lazy(() => import('./components/Projects'))
 const Blogs = lazy(() => import('./components/Blogs'))  
+const Learn = lazy(() => import('./components/Learn'))
 const Contact = lazy(() => import('./components/Contact'))
 const Navbar = lazy(() => import('./components/Navbar'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -39,6 +40,7 @@ function App() {
         <Route path='/' element={ <Suspense fallback="loading"><Home></Home></Suspense> } />
         <Route path='/projects' element={<Suspense fallback="loading"><Projects /></Suspense>} />
         <Route path='/blogs' element={<Suspense fallback="loading"><Blogs /></Suspense>} />
+        <Route path='/learn' element={<Suspense fallback="loading"><Learn /></Suspense>} />
         <Route path='/contact' element={<Suspense fallback="loading"><Contact /></Suspense>} />
       </Routes>
 
