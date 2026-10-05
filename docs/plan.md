@@ -11,11 +11,14 @@ Branch: `feat/resume-blogs-learn`. Orchestrated by Claude (planner/reviewer); ag
 - Do not rewrite Anant's hero copy, links, or footer.
 
 ## Tasks
-- [ ] P1 refactor: data files + ProjectCard/ExperienceCard/TechTag, zero visual change
-- [ ] P2 resume content: experience highlights, new projects, education, skills, achievements
-- [ ] P3 blogs page from `src/data/blogs.js`
-- [ ] P4 Learn section: `/learn` listing + `public/learn/` static pages host + navbar entry
-- [ ] P5 README/AGENTS.md: how to add a project / blog / learn item
+- [x] P1 refactor: data files + ProjectCard/ExperienceCard/TechTag, zero visual change
+- [x] P2 resume content: experience highlights, new projects, education, skills, achievements
+- [x] P3 blogs page from `src/data/blogs.js`
+- [x] P4 Learn section: `/learn` listing + `public/learn/` static pages host + navbar entry
+- [x] P5 README/AGENTS.md: how to add a project / blog / learn item
 
 ## Status / next step
-Starting P1.
+All tasks done. Open follow-ups:
+- (a) paste the live Hashnode URL into src/data/blogs.js
+- (b) first Learn playlist awaits transcripts (YouTube bot-blocks the VPS/office IPs)
+- (c) the pre-existing lint error

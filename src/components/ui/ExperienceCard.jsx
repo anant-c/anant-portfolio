@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperienceCard = ({ item, experience, ...props }) => {
   const exp = item || experience || props;
-  const roleText = exp.role || exp.roleLine;
+  const roleText = exp.role;
 
   return (
     <a
