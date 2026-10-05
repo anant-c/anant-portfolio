@@ -14,7 +14,7 @@ export const projects = [
       "React",
       "Docker",
     ],
-    description: "A developer-first tool for dataset discovery and lineage tracking. One shared core module powers both a FastAPI backend and a Typer CLI, backed by a PostgreSQL lineage graph, with a React hub for search and lineage exploration, SCP-over-SSH transfers, and a TestPyPI release.",
+    description: "Dataset discovery and lineage tracking in one place: a shared core powers both a FastAPI backend and a Typer CLI, with a PostgreSQL lineage graph and a React hub for search and lineage exploration.",
     github: "https://github.com/anant-c/datatrac",
     live: null,
     featured: true,
