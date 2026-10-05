@@ -69,7 +69,7 @@ All portfolio content is decoupled from layout. Data lives in JavaScript objects
 ### Adding a Project
 
 File: `src/data/projects.js`
-Asset: Place project image or preview graphic under `public/assets/`
+Asset: Place project image or preview graphic under `public/assets/` (any aspect ratio: it is shown in a fixed 16:9 frame, fitted inside without cropping)
 
 1. Place image in `public/assets/<filename>` (SVG, PNG, or JPG).
 2. Append a new project object to the `projects` array in `src/data/projects.js`.

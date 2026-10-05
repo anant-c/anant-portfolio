@@ -12,9 +12,7 @@ const ProjectCard = ({ project, ...rest }) => {
         <img
           alt={p.imageAlt}
           loading="lazy"
-          width="370"
-          height="370"
-          className="rounded-sm hover:blur-xs transition-all"
+          className="w-full aspect-video object-contain bg-[#09090b] rounded-sm hover:blur-xs transition-all"
           src={p.image}
         />
         <div className="flex justify-between items-center">

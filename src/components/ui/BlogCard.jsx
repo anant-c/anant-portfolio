@@ -7,6 +7,14 @@ const BlogCard = ({ blog, post, item, ...props }) => {
 
   const content = (
     <>
+      {b.image && (
+        <img
+          src={b.image}
+          alt={b.imageAlt || b.title}
+          loading="lazy"
+          className="w-full rounded-sm border border-zinc-800"
+        />
+      )}
       <h2
         className={`font-bold text-lg ${
           hasUrl ? 'underline hover:no-underline' : ''
