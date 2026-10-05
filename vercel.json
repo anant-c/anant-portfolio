@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/learn/:slug([a-z0-9-]+)", "destination": "/learn/:slug/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
