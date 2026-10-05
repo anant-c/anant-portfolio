@@ -7,6 +7,11 @@ export const experience = [
     logo: "/assets/aganitha.png",
     logoAlt: "Aganitha Logo",
     url: "https://www.aganitha.ai",
+    highlights: [
+      "Built AI agents for tracking academic publications across Google Scholar, PubMed, and bioRxiv APIs.",
+      "Integrated Google ADK and Model Context Protocol (MCP) into publication-tracking workflows.",
+      "Designed and implemented frontend components for visualizing research trends and analytics.",
+    ],
   },
   {
     id: "iit-dharwad",
@@ -16,6 +21,11 @@ export const experience = [
     logo: "/assets/iit.png",
     logoAlt: "IIT Dharward",
     url: "https://www.iitdh.ac.in/",
+    highlights: [
+      "Developed a 2FA voice authentication system with a React frontend and real-time audio processing.",
+      "Fine-tuned ECAPA-TDNN and Titanet-L on Indian speech datasets, improving EER and minDCF.",
+      "Improved model robustness across cross-sensor and cross-lingual variations.",
+    ],
   },
   {
     id: "samsung-prism",
@@ -25,6 +35,10 @@ export const experience = [
     logo: "/assets/prism.jpg",
     logoAlt: "PRISM Logo",
     url: "https://www.samsungprism.com/",
+    highlights: [
+      "Built a bias detection model for LLM-generated summaries of news articles, using BERT for classification and BART for correction on the WNC dataset.",
+      "Formulated 2 novel evaluation metrics for style transfer and content preservation that outperformed BLEU.",
+    ],
   },
 ];
 

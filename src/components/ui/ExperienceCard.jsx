@@ -24,6 +24,13 @@ const ExperienceCard = ({ item, experience, ...props }) => {
         </h2>
       </div>
       <h3>{roleText}</h3>
+      {exp.highlights && exp.highlights.length > 0 && (
+        <ul className="text-sm list-disc pl-5 text-zinc-300 space-y-1">
+          {exp.highlights.map((highlight, index) => (
+            <li key={index}>{highlight}</li>
+          ))}
+        </ul>
+      )}
     </a>
   );
 };

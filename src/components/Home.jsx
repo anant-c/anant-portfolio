@@ -3,8 +3,14 @@ import { IoArrowDownCircleOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 import { experience } from '../data/experience';
 import { projects } from '../data/projects';
+import { skills } from '../data/skills';
+import { education } from '../data/education';
+import { achievements } from '../data/achievements';
 import ExperienceCard from './ui/ExperienceCard';
 import ProjectCard from './ui/ProjectCard';
+import EducationCard from './ui/EducationCard';
+import TechTag from './ui/TechTag';
+import Section from './ui/Section';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -36,22 +42,63 @@ const Home = () => {
         </div>
       </div>
 
-      <h1 className="text-3xl font-bold pt-10 ">Work experience</h1>
-      <div>
-        {experience.map((item) => (
-          <ExperienceCard key={item.id} item={item} />
-        ))}
-      </div>
-
-      <h1 className="text-3xl font-bold pt-10 ">Projects</h1>
-
-      <div className='grid grid-flow-row grid-cols-1 gap-2 mb-17 md:grid-cols-2 '>
-        {projects
-          .filter((p) => p.featured)
-          .map((project) => (
-            <ProjectCard key={project.id} project={project} />
+      <Section title="Work experience">
+        <div>
+          {experience.map((item) => (
+            <ExperienceCard key={item.id} item={item} />
           ))}
-      </div>
+        </div>
+      </Section>
+
+      <Section title="Skills">
+        <div className="flex flex-col gap-4 my-4">
+          {skills.map((group) => (
+            <div key={group.category} className="flex flex-col gap-2">
+              <h3 className="text-sm font-semibold text-zinc-400">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <TechTag key={skill} tag={skill} />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section title="Education">
+        <div>
+          {education.map((item) => (
+            <EducationCard key={item.id} item={item} />
+          ))}
+        </div>
+      </Section>
+
+      <Section title="Achievements">
+        <ul className="border border-zinc-800 rounded-md divide-y divide-zinc-800 my-4">
+          {achievements.map((item) => (
+            <li key={item.id} className="p-4 flex flex-col gap-1">
+              <span className="font-bold text-white text-base">
+                {item.title}
+              </span>
+              {item.detail && (
+                <span className="text-sm text-zinc-400">{item.detail}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section title="Projects">
+        <div className="grid grid-flow-row grid-cols-1 gap-2 mb-17 md:grid-cols-2">
+          {projects
+            .filter((p) => p.featured)
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+        </div>
+      </Section>
       <div className="m-10 flex justify-center animate-bounce hover:cursor-pointer">
         <IoArrowDownCircleOutline className="text-3xl" onClick={()=>{navigate("/projects")}} />
       </div>
