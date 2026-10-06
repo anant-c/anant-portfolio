@@ -7,7 +7,7 @@ Guidelines and constraints for automated coding agents working in this repositor
 - **Theme**: Black background, white text, Jura font, `max-w-3xl mx-auto px-4`, zinc-800 bordered cards, `hover:scale-105 transition-all`.
 - **Status pills and tags**: Tag chips must use `text-xs rounded-md bg-zinc-200 px-1 text-zinc-900 border border-zinc-800 font-extrabold flex`. Online/offline status pills (green/gray) must include the pulsing dot. Reuse these exact class strings.
 - **Dependencies**: No new npm dependencies. No markdown renderer. No UI library.
-- **Data-driven**: Content lives in `src/data/*.js` and `public/learn/index.json`. Components only render. Adding an item means adding an object to the corresponding data array.
+- **Data-driven**: Content lives in `src/data/*.js` and `public/learn/catalog.json`. Components only render. Adding an item means adding an object to the corresponding data array.
 - **Content fidelity**: Do not rewrite Anant's hero copy, links, or footer. Change only what was requested.
 
 ## Class Strings to Reuse
@@ -28,7 +28,7 @@ Guidelines and constraints for automated coding agents working in this repositor
 - Reusable UI: `src/components/ui/` (`ProjectCard.jsx`, `ExperienceCard.jsx`, `EducationCard.jsx`, `BlogCard.jsx`, `TechTag.jsx`, `StatusPill.jsx`, `Section.jsx`, `icons.jsx`)
 - Content data files: `src/data/` (`projects.js`, `experience.js`, `skills.js`, `education.js`, `achievements.js`, `blogs.js`, `learn.js`)
 - Static assets: `public/assets/`
-- Learn static site and index: `public/learn/index.json`, `public/learn/<slug>/`
+- Learn static site and index: `public/learn/catalog.json`, `public/learn/<slug>/`
 - Global styles and font definitions: `src/index.css`
 
 ## Verification

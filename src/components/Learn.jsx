@@ -14,7 +14,7 @@ const Learn = () => {
   useEffect(() => {
     let isMounted = true;
 
-    fetch('/learn/index.json')
+    fetch('/learn/catalog.json')
       .then((res) => {
         if (!res.ok) {
           throw new Error(`Failed to load: ${res.statusText}`);
