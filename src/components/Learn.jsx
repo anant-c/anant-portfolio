@@ -83,6 +83,15 @@ const Learn = () => {
                     : undefined
                 }
               >
+                {item.cover && (
+                  <img
+                    src={item.cover}
+                    alt={`${item.title} cover`}
+                    loading="lazy"
+                    className="w-full aspect-video object-cover rounded-sm border border-zinc-800"
+                  />
+                )}
+
                 <div className="flex items-center gap-2">
                   <TechTag tag={kindLabel} />
                 </div>
