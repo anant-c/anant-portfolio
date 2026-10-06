@@ -9,7 +9,7 @@ export const blogs = [
     description:
       "Ship AI-built projects on one $5 server with only SSH open. How I run all my side projects on one box, explained without the jargon, plus a free AI skill that sets it up for you.",
     tags: ["Vibe Coding", "Self-hosting", "Cloudflare", "Docker", "Security"],
-    url: "" /* TODO: paste the live Hashnode URL */,
+    url: "https://canant.hashnode.dev/the-5-vps-setup-every-vibe-coder-needs-skill-included",
     links: [
       {
         label: "Skill on GitHub",
