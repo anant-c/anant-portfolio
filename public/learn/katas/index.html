@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katas by Varun Mayya · Notes</title>
+  <meta name="description" content="Study notes for Varun Mayya's Katas series on start-ups, careers, mental models, and systems thinking.">
+  <meta name="ytnotes:summary" content="The ultimate study guide to Varun Mayya's Katas on mental models, scaling, and career success.">
+  <meta name="ytnotes:tags" content="startups,mental models,career,systems,india">
+  <meta name="ytnotes:accent" content="#d74299">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #e0e0e0;
+      --muted: #a0a0a0;
+      --accent: #d74299;
+      --surface: #1a1a1a;
+      --surface-border: #333;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      max-width: 68ch;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #fff; margin-top: 2rem; }
+    .hero { margin: 4rem 0 2rem; text-align: center; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .hero .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+    .hero .start-here { display: inline-block; padding: 0.5rem 1rem; border: 1px solid var(--accent); border-radius: 4px; margin-top: 1rem; font-weight: bold; }
+    .belt-divider { height: 4px; background: linear-gradient(90deg, transparent, var(--accent), transparent); margin: 3rem 0; }
+    .video-card { background: var(--surface); border: 1px solid var(--surface-border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .video-card h3 { margin-top: 0; margin-bottom: 0.5rem; }
+    .video-card .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+    .video-card ul { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+    .video-card ul li { margin-bottom: 0.5rem; }
+    .video-card .links { font-size: 0.9rem; font-weight: bold; }
+    .video-card .links a { margin-right: 1rem; }
+    figure.diagram { margin: 2rem 0; overflow-x: auto; background: var(--surface); padding: 1rem; border-radius: 8px; border: 1px solid var(--surface-border); }
+    figure.diagram svg { display: block; min-width: 560px; max-width: 100%; height: auto; }
+    figcaption { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 1rem; font-style: italic; }
+    table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.9rem; }
+    th, td { padding: 0.75rem; border-bottom: 1px solid var(--surface-border); text-align: left; vertical-align: top; }
+    th { color: #fff; font-weight: 600; }
+    .tag { display: inline-block; background: var(--surface-border); color: var(--text); padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.75rem; margin-right: 0.25rem; }
+    .top-bar { padding: 1rem 0; border-bottom: 1px solid var(--surface-border); margin-bottom: 2rem; font-size: 0.9rem; }
+    .top-bar a { color: var(--muted); }
+    .top-bar a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="/learn">← Learn</a>
+  </div>
+
+  <div class="hero">
+    <h1>Katas</h1>
+    <div class="meta">By Varun Mayya · 14 Videos · 12:01:00 Total Duration</div>
+    <p>The ultimate study guide to Varun Mayya's series on mental models, scaling, and career success.</p>
+    <a href="14-guide-to-scaling-a-startup-with-zero-funding-kata-1.html" class="start-here">Start with Kata 1</a>
+  </div>
+
+  <div class="belt-divider"></div>
+
+  <h2>The Big Picture</h2>
+  <p>Varun Mayya’s "Katas" are a series of structured frameworks (mental martial arts) designed to break readers out of average outcomes. The through-line is <strong>systematic leverage</strong>: identifying the invisible rules of wealth, status, and distribution, and exploiting them through cheap experiments and extreme simplification. Rather than relying on luck or raw effort, the series advocates for understanding biological imperatives, reducing risk mathematically, and scaling value via distribution rather than just product engineering.</p>
+
+  <h2>The Learning Map</h2>
+  <figure class="diagram">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" role="img">
+      <title>Katas Learning Map</title>
+      <desc>A roadmap connecting the Katas across three themes: Mindset, Career, and Startups.</desc>
+      
+      <!-- Columns -->
+      <rect x="10" y="10" width="190" height="380" fill="#ffffff" fill-opacity="0.03" rx="8"/>
+      <text x="105" y="40" fill="var(--accent)" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">MINDSET &amp; BIOLOGY</text>
+
+      <rect x="220" y="10" width="190" height="380" fill="#ffffff" fill-opacity="0.03" rx="8"/>
+      <text x="315" y="40" fill="var(--accent)" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">CAREER &amp; SKILLS</text>
+
+      <rect x="430" y="10" width="190" height="380" fill="#ffffff" fill-opacity="0.03" rx="8"/>
+      <text x="525" y="40" fill="var(--accent)" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">STARTUP BUILDING</text>
+
+      <!-- Connectors -->
+      <path d="M 105 100 L 105 160" stroke="#555" stroke-width="2" fill="none" />
+      <path d="M 105 200 L 105 260" stroke="#555" stroke-width="2" fill="none" />
+      
+      <path d="M 315 100 L 315 160" stroke="#555" stroke-width="2" fill="none" />
+      <path d="M 315 200 L 315 260" stroke="#555" stroke-width="2" fill="none" />
+      <path d="M 315 300 L 315 360" stroke="#555" stroke-width="2" fill="none" />
+
+      <path d="M 525 100 L 525 160" stroke="#555" stroke-width="2" fill="none" />
+      <path d="M 525 200 L 525 260" stroke="#555" stroke-width="2" fill="none" />
+      <path d="M 525 300 L 525 360" stroke="#555" stroke-width="2" fill="none" />
+
+      <path d="M 185 180 L 235 180" stroke="#555" stroke-width="2" stroke-dasharray="4" fill="none" />
+      <path d="M 395 280 L 445 280" stroke="#555" stroke-width="2" stroke-dasharray="4" fill="none" />
+
+      <!-- Nodes Column 1 -->
+      <a href="10-secret-kata-1-harsh-truths-about-india-s-social-pressure-and-depression.html">
+        <rect x="25" y="60" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="105" y="84" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Secret Kata: Social Pressure</text>
+      </a>
+      <a href="11-why-indians-don-t-attempt-and-stay-average-forever-kata-4.html">
+        <rect x="25" y="160" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="105" y="184" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 4: Why We Don't Attempt</text>
+      </a>
+      <a href="06-how-to-take-risk-like-rich-people-do-1-hour-masterclass-kata-9.html">
+        <rect x="25" y="260" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="105" y="284" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 9: Taking Risks</text>
+      </a>
+      <a href="02-how-to-think-like-rich-people-1-hour-masterclass.html">
+        <rect x="25" y="340" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="105" y="364" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Think Like Rich People</text>
+      </a>
+
+      <!-- Nodes Column 2 -->
+      <a href="08-career-advice-for-people-who-feel-lost-kata-7.html">
+        <rect x="235" y="60" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="315" y="84" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 7: Career Advice</text>
+      </a>
+      <a href="07-how-to-get-hired-faster-than-everyone-else-kata-8.html">
+        <rect x="235" y="160" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="315" y="184" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 8: Getting Hired</text>
+      </a>
+      <a href="05-how-distribution-can-10x-your-luck-career-income-kata-10.html">
+        <rect x="235" y="260" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="315" y="284" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 10: Distribution</text>
+      </a>
+      <a href="01-the-most-valuable-skill-after-ai.html">
+        <rect x="235" y="360" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="315" y="384" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Most Valuable Skill After AI</text>
+      </a>
+
+      <!-- Nodes Column 3 -->
+      <a href="14-guide-to-scaling-a-startup-with-zero-funding-kata-1.html">
+        <rect x="445" y="60" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="525" y="84" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 1: Scaling Startups</text>
+      </a>
+      <a href="13-why-90-of-companies-break-after-50-people-kata-2.html">
+        <rect x="445" y="160" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="525" y="184" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 2: Company Break Points</text>
+      </a>
+      <a href="09-why-indian-startups-are-unprofitable-kata-6.html">
+        <rect x="445" y="260" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="525" y="284" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Kata 6: Unprofitable Startups</text>
+      </a>
+      <a href="04-how-simplifying-everything-makes-you-rich.html">
+        <rect x="445" y="360" width="160" height="40" rx="4" fill="#1a1a1a" stroke="var(--accent)"/>
+        <text x="525" y="384" fill="#fff" font-family="system-ui" font-size="12" text-anchor="middle">Simplifying Everything</text>
+      </a>
+
+    </svg>
+    <figcaption>The Katas clustered by domain. Solid lines show direct progression; dashed lines show conceptual links.</figcaption>
+  </figure>
+
+  <h2>Reading Paths</h2>
+  <p>Based on what you want to achieve, start with one of these curated sequences:</p>
+  <ul>
+    <li>
+      <strong>The Startup Builder</strong>: Learn how to test demand, structure a team, navigate the Indian market, and avoid complex failure spirals.
+      <br><em>Read:</em> <a href="14-guide-to-scaling-a-startup-with-zero-funding-kata-1.html">Kata 1</a> → <a href="13-why-90-of-companies-break-after-50-people-kata-2.html">Kata 2</a> → <a href="09-why-indian-startups-are-unprofitable-kata-6.html">Kata 6</a> → <a href="04-how-simplifying-everything-makes-you-rich.html">Simplifying Everything</a>
+    </li>
+    <li>
+      <strong>The Career Accelerator</strong>: How to get hired, find direction, build a personal distribution engine, and master systems thinking.
+      <br><em>Read:</em> <a href="08-career-advice-for-people-who-feel-lost-kata-7.html">Kata 7</a> → <a href="07-how-to-get-hired-faster-than-everyone-else-kata-8.html">Kata 8</a> → <a href="05-how-distribution-can-10x-your-luck-career-income-kata-10.html">Kata 10</a> → <a href="01-the-most-valuable-skill-after-ai.html">Valuable Skill After AI</a>
+    </li>
+    <li>
+      <strong>The Mental Model Masterclass</strong>: Overcome biological programming, master Game Theory Optimal risk, and adopt the mindset of the wealthy.
+      <br><em>Read:</em> <a href="06-how-to-take-risk-like-rich-people-do-1-hour-masterclass-kata-9.html">Kata 9</a> → <a href="02-how-to-think-like-rich-people-1-hour-masterclass.html">Think Like Rich People</a> → <a href="10-secret-kata-1-harsh-truths-about-india-s-social-pressure-and-depression.html">Secret Kata #1</a> → <a href="11-why-indians-don-t-attempt-and-stay-average-forever-kata-4.html">Kata 4</a>
+    </li>
+  </ul>
+
+  <div class="belt-divider"></div>
+
+  <h2>Top 10 Insights to Remember</h2>
+  <ol>
+    <li>The fastest way to get lucky is to build a "lightning catcher"—a distribution engine that captures random opportunities. <span class="tag">Kata 10</span></li>
+    <li>Do not attempt a moonshot without first making ten cheap, staged bets to gather data (the GTO approach). <span class="tag">Kata 9</span></li>
+    <li>The literal genie problem of AI means you must master systems thinking—specifying exactly what you want across interconnected parts. <span class="tag">AI Skill</span></li>
+    <li>People don't attempt things because biological rank pressure punishes failure with social defeat. You must detach your ego from the outcome. <span class="tag">Kata 4</span></li>
+    <li>True Alphas build structures; fake Alphas just dominate others. To scale beyond 50 people, you must hire true Alphas for every department. <span class="tag">Kata 2</span></li>
+    <li>A business is just a spreadsheet of assumptions; simplify the model until it fits in your head before writing any code. <span class="tag">Simplification</span></li>
+    <li>Never build the final product first. Sell the minimum viable test to validate demand before investing resources. <span class="tag">Kata 1</span></li>
+    <li>Manage projects by breaking them into parallel chunks with clear input/output contracts (the AEOS model). <span class="tag">Projects</span></li>
+    <li>The rich don't take blind risks; they systematically eliminate downside while keeping the upside open. <span class="tag">Rich People</span></li>
+    <li>Most Indian startups fail because they solve for efficiency rather than distribution in a low-trust market. <span class="tag">Kata 6</span></li>
+  </ol>
+
+  <div class="belt-divider"></div>
+
+  <h2>Cross-Cutting Themes</h2>
+  <table>
+    <tr>
+      <th>Theme</th>
+      <th>Description</th>
+      <th>Key Videos</th>
+    </tr>
+    <tr>
+      <td>Asymmetric Risk &amp; Staged Bets</td>
+      <td>Never take a risk that wipes you out. Use Game Theory Optimal (GTO) sizing and cheap experiments to learn without massive exposure.</td>
+      <td>Kata 9, Kata 1, Kata 8</td>
+    </tr>
+    <tr>
+      <td>Distribution over Product</td>
+      <td>Building a good product is necessary but insufficient. Wealth and scale come from owning the attention pipeline and the "lightning catcher."</td>
+      <td>Kata 10, Kata 6, Simplification</td>
+    </tr>
+    <tr>
+      <td>Biological Determinism</td>
+      <td>Human behavior is heavily governed by serotonin and rank-preservation. Understanding this helps you bypass fear of failure and manage team dynamics.</td>
+      <td>Secret Kata 1, Kata 4, Kata 2</td>
+    </tr>
+    <tr>
+      <td>Systems Thinking</td>
+      <td>Viewing the world as interconnected inputs, outputs, and feedback loops is the core capability required to leverage AI and scale companies.</td>
+      <td>AI Skill, Kata 3</td>
+    </tr>
+    <tr>
+      <td>Simplicity as a Weapon</td>
+      <td>Complexity kills startups. Reducing a business to its core arithmetic or a project to its fundamental nodes is essential for execution.</td>
+      <td>Simplification, Rich People</td>
+    </tr>
+  </table>
+
+  <div class="belt-divider"></div>
+
+  <h2>The Video Catalog (Recommended Reading Order)</h2>
+  <p>The Katas were published out of order. We recommend starting with Kata 1 and moving chronologically through the numbered katas, finishing with the standalone masterclasses.</p>
+
+  <div class="video-card">
+    <h3>Kata 1: Guide to Scaling A Startup with Zero Funding</h3>
+    <div class="meta">Duration: 1:18:41</div>
+    <p>Never build the product first. Validate demand with minimum viable tests and scale via cash flow rather than VC funding.</p>
+    <ul>
+      <li>Sell the "Ghost" before writing code to prove someone will pay.</li>
+      <li>Treat the business like an algorithm: optimize conversion rates at each step.</li>
+      <li>Do not scale the team until unit economics are profitable.</li>
+    </ul>
+    <div class="links">
+      <a href="14-guide-to-scaling-a-startup-with-zero-funding-kata-1.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=9NjA41wShTI" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 2: Why 90% of Companies Break After 50 People</h3>
+    <div class="meta">Duration: 1:00:14</div>
+    <p>Scaling a company is an exercise in human biology and structural delegation, requiring "True Alphas" to lead silos.</p>
+    <ul>
+      <li>The 50-person mark breaks flat communication; you must switch to a siloed structure.</li>
+      <li>Fake Alphas dominate via politics; True Alphas build systems and protect their teams.</li>
+      <li>The CEO must transition from doing the work to managing the True Alphas.</li>
+    </ul>
+    <div class="links">
+      <a href="13-why-90-of-companies-break-after-50-people-kata-2.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=uojkYJz7d-k" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 3: How I Use AI (1 Hour Masterclass)</h3>
+    <div class="meta">Duration: 44:30</div>
+    <p>Treat AI as an infinite intern pool; mastery comes from prompting with structured constraints, not relying on defaults.</p>
+    <ul>
+      <li>Stop treating AI like a search engine and start treating it like a reasoning engine.</li>
+      <li>The "Chain of Density" prompt forces AI to iterate and condense information.</li>
+      <li>Those who master prompt engineering will command the leverage of a 100-person company.</li>
+    </ul>
+    <div class="links">
+      <a href="12-how-i-use-ai-1-hour-masterclass-kata-3.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=yJFsZLgUa40" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 4: Why Indians Don't Attempt (And Stay Average)</h3>
+    <div class="meta">Duration: 54:38</div>
+    <p>Biological fear of social defeat and rank loss paralyses attempts; overcoming this requires detaching ego from experiments.</p>
+    <ul>
+      <li>Serotonin drops when you fail publicly, triggering a biological retreat mechanism.</li>
+      <li>We are wired to protect our current social rank rather than risk it for a higher one.</li>
+      <li>You must reframe failure as data collection to bypass the amygdala's panic response.</li>
+    </ul>
+    <div class="links">
+      <a href="11-why-indians-don-t-attempt-and-stay-average-forever-kata-4.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=mPjj7-eHw1s" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 6: Why Indian Startups Are Unprofitable</h3>
+    <div class="meta">Duration: 38:43</div>
+    <p>Indian startups fail because they import Western models that rely on high-trust, high-LTV markets into a low-trust, low-LTV reality.</p>
+    <ul>
+      <li>Western startups optimize for efficiency; Indian startups must optimize for distribution and trust.</li>
+      <li>The LTV (Life Time Value) in India is too low to sustain massive CAC (Customer Acquisition Cost).</li>
+      <li>Service businesses masquerading as tech platforms cannot achieve software margins.</li>
+    </ul>
+    <div class="links">
+      <a href="09-why-indian-startups-are-unprofitable-kata-6.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=jEnxvZXzo0E" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 7: Career Advice for People Who Feel Lost</h3>
+    <div class="meta">Duration: 36:46</div>
+    <p>Stop looking for passion and start optimizing for skill stacking and asymmetric bets in expanding markets.</p>
+    <ul>
+      <li>Passion is a trailing indicator of success, not a prerequisite for starting.</li>
+      <li>Combine two mediocre skills to create a rare intersection (e.g., coding + marketing).</li>
+      <li>Place yourself in high-growth industries where the rising tide lifts all boats.</li>
+    </ul>
+    <div class="links">
+      <a href="08-career-advice-for-people-who-feel-lost-kata-7.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=Ia_bqazMeIw" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 8: How to Get Hired Faster Than Everyone Else</h3>
+    <div class="meta">Duration: 50:38</div>
+    <p>Bypass the traditional HR funnel by treating the job hunt as a B2B sales process targeted directly at decision-makers.</p>
+    <ul>
+      <li>The standard resume drop is a low-probability lottery; cold outreach to hiring managers works.</li>
+      <li>De-risk the hire by offering a "Proof of Work" (a free, highly relevant mini-project).</li>
+      <li>Understand the "Hiring Stack" and solve the exact pain point the manager is facing today.</li>
+    </ul>
+    <div class="links">
+      <a href="07-how-to-get-hired-faster-than-everyone-else-kata-8.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=oQd7Dw47VdU" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 9: How To Take Risk Like Rich People Do</h3>
+    <div class="meta">Duration: 1:07:45</div>
+    <p>Wealth is built by taking calculated, asymmetric risks (Game Theory Optimal) while aggressively protecting the downside.</p>
+    <ul>
+      <li>Never make a bet that exposes you to a "zero" (total ruin).</li>
+      <li>Use the barbell strategy: 90% ultra-safe assets, 10% high-risk, high-reward asymmetric bets.</li>
+      <li>Take risks when you are young; your biological and financial ability to recover drops with age.</li>
+    </ul>
+    <div class="links">
+      <a href="06-how-to-take-risk-like-rich-people-do-1-hour-masterclass-kata-9.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=EWFn-RgxZ5M" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Kata 10: How Distribution Can 10x Your Luck, Career &amp; Income</h3>
+    <div class="meta">Duration: 39:23</div>
+    <p>Distribution (audience, network, reach) is the ultimate multiplier that turns ordinary work into extraordinary luck.</p>
+    <ul>
+      <li>Build a "Lightning Catcher"—a platform that exposes you to massive serendipity.</li>
+      <li>Distribution compounds; the earlier you start publishing or networking, the larger the snowball.</li>
+      <li>A mediocre product with great distribution will always beat a great product with zero distribution.</li>
+    </ul>
+    <div class="links">
+      <a href="05-how-distribution-can-10x-your-luck-career-income-kata-10.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=TGKgCLVxRCk" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>Secret Kata #1: Harsh Truths About India’s Social Pressure</h3>
+    <div class="meta">Duration: 31:17</div>
+    <p>Depression and stagnation in Indian youth often stem from an evolutionary mismatch between modern ambition and traditional family rank structures.</p>
+    <ul>
+      <li>The family acts as a biological hierarchy where deviation is punished to maintain stability.</li>
+      <li>You must create physical or emotional distance to execute non-traditional career moves.</li>
+      <li>Recognize that "log kya kahenge" (what will people say) is literally an evolutionary survival mechanism, not just a cultural quirk.</li>
+    </ul>
+    <div class="links">
+      <a href="10-secret-kata-1-harsh-truths-about-india-s-social-pressure-and-depression.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=wM7jyLJBi_g" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>The Most Valuable Skill After AI</h3>
+    <div class="meta">Duration: 1:14:46</div>
+    <p>As AI commoditizes execution, the premium shifts to Systems Thinking: the ability to architect, connect, and oversee complex nodes.</p>
+    <ul>
+      <li>AI suffers from the "Literal Genie" problem—it does exactly what you ask, exposing flawed logic.</li>
+      <li>The future belongs to the architect, not the bricklayer. Learn to design the system.</li>
+      <li>Debugging interconnected, AI-generated systems is harder than writing the code yourself.</li>
+    </ul>
+    <div class="links">
+      <a href="01-the-most-valuable-skill-after-ai.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=4N8WadMsdmI" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>How to Think Like Rich People</h3>
+    <div class="meta">Duration: 1:11:28</div>
+    <p>The wealthy view the world through mathematical expected value, not emotional narrative, optimizing for capital allocation.</p>
+    <ul>
+      <li>Separate your time from your income; wealth is generated by assets that scale infinitely.</li>
+      <li>Understand the difference between playing status games and wealth games.</li>
+      <li>Think in probabilities: a 10% chance to make $10M is worth playing if the cost of failure is only $10k.</li>
+    </ul>
+    <div class="links">
+      <a href="02-how-to-think-like-rich-people-1-hour-masterclass.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=8WgipmPSPKk" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>How I Manage Projects End To End</h3>
+    <div class="meta">Duration: 43:20</div>
+    <p>The AEOS (Architecture, Engineering, Operations, Strategy) framework is a deterministic system for executing complex projects without burnout.</p>
+    <ul>
+      <li>Never mix Architecture (planning) with Engineering (doing). Plan completely before starting.</li>
+      <li>Define strict input/output contracts for every task to avoid integration hell.</li>
+      <li>Operate in parallel tracks; bottlenecking on serial execution destroys velocity.</li>
+    </ul>
+    <div class="links">
+      <a href="03-how-i-manage-projects-end-to-end-1-hour-masterclass.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=mwQhnZ32CeE" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>How Simplifying Everything Makes You Rich</h3>
+    <div class="meta">Duration: 28:51</div>
+    <p>Complexity is an ego-trap. Wealth comes from reducing businesses and mental models down to their simplest executable form.</p>
+    <ul>
+      <li>If you cannot explain your business model on a napkin, it will fail under pressure.</li>
+      <li>Remove features, reduce the target audience, and simplify the pitch until it is undeniably clear.</li>
+      <li>Complexity creates friction; friction destroys conversion rates and speed.</li>
+    </ul>
+    <div class="links">
+      <a href="04-how-simplifying-everything-makes-you-rich.html">Read Notes →</a>
+      <a href="https://www.youtube.com/watch?v=0tbeJZYvsg4" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </div>
+  </div>
+
+  <div class="belt-divider"></div>
+
+  <h2>Glossary of Core Concepts</h2>
+  <dl>
+    <dt><strong>True Alpha</strong></dt>
+    <dd>A leader who builds structures, protects their team, and derives status from systemic success, not interpersonal dominance.</dd>
+    
+    <dt><strong>The Lightning Catcher</strong></dt>
+    <dd>A distribution mechanism (like a large audience or network) designed to capture asymmetric, random opportunities that you couldn't predict.</dd>
+    
+    <dt><strong>GTO (Game Theory Optimal)</strong></dt>
+    <dd>An approach to risk-taking that relies on making many small, mathematically sound bets to gather data, rather than one emotional moonshot.</dd>
+    
+    <dt><strong>AEOS Framework</strong></dt>
+    <dd>Architecture, Engineering, Operations, Strategy. A project management model separating the design of a system from its execution.</dd>
+    
+    <dt><strong>The Literal Genie Problem</strong></dt>
+    <dd>The phenomenon where AI or automation executes exactly what is asked, often revealing that human instructions are fundamentally flawed or incomplete.</dd>
+  </dl>
+
+</body>
+</html>

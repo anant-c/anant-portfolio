@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="100%" height="100%">
+  <rect width="640" height="360" fill="#0a0a0a" />
+  
+  <!-- Belt progression lines -->
+  <path d="M 0 60 L 640 60" stroke="#ffffff" stroke-opacity="0.1" stroke-width="4" />
+  <path d="M 0 100 L 640 100" stroke="#ffffff" stroke-opacity="0.2" stroke-width="8" />
+  <path d="M 0 150 L 640 150" stroke="#ffffff" stroke-opacity="0.4" stroke-width="12" />
+  <path d="M 0 210 L 640 210" stroke="#ffffff" stroke-opacity="0.7" stroke-width="16" />
+  <path d="M 0 280 L 640 280" stroke="#d74299" stroke-width="24" />
+
+  <!-- Belt knot motif on the final belt -->
+  <rect x="290" y="260" width="60" height="64" fill="#0a0a0a" />
+  <rect x="300" y="270" width="40" height="44" fill="#d74299" />
+  <path d="M 320 280 L 320 304" stroke="#0a0a0a" stroke-width="4" />
+
+  <text x="320" y="200" font-family="system-ui, sans-serif" font-weight="900" font-size="72" fill="#ffffff" text-anchor="middle" letter-spacing="8">KATAS</text>
+  <text x="320" y="235" font-family="system-ui, sans-serif" font-weight="400" font-size="20" fill="#a0a0a0" text-anchor="middle" letter-spacing="4">BY VARUN MAYYA</text>
+</svg>

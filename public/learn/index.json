@@ -1,5 +1,25 @@
 [
   {
+    "slug": "katas",
+    "title": "Katas",
+    "kind": "playlist",
+    "channel": "Varun Mayya",
+    "source_url": "https://www.youtube.com/playlist?list=PLSAVyiM48sqvzLBEbPqD8TZpfu5UyzO9t",
+    "videos": 14,
+    "duration_min": 721,
+    "added": "2026-10-06",
+    "summary": "The ultimate study guide to Varun Mayya's Katas on mental models, scaling, and career success.",
+    "tags": [
+      "startups",
+      "mental models",
+      "career",
+      "systems",
+      "india"
+    ],
+    "accent": "#d74299",
+    "cover": "/learn/katas/cover.svg"
+  },
+  {
     "slug": "sample",
     "title": "Sample Talk: Core Storage Systems",
     "kind": "playlist",
