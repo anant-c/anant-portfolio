@@ -21,7 +21,7 @@ const Home = () => {
         <div className='gap-4 flex flex-col'>
           <p className='font-bold text-4xl md:text-4xl lg:text-5xl'>Hi, i'm anant 👋</p>
           <p>
-            I’m a software developer blending ML and full-stack skills to craft the next generation of intelligent, adaptive applications.
+            I’m an AI Engineer blending ML and full-stack skills to craft the next generation of intelligent, adaptive applications.
           </p>
           <p>I am very active on <a target="_blank" className="font-bold underline hover:no-underline" href="https://x.com/anant_x">x/twitter</a> where I document my journey, share insights, and build in public. </p>
           <div className='flex gap-3'>
