@@ -5,7 +5,7 @@ export const education = [
     degree: "B.E. Electronics and Communications",
     period: "Dec 2021 - Jul 2025",
     location: "Hubli, Karnataka",
-    grade: "CGPA: 7.97 (till Semester 7)",
+    grade: "CGPA: 8.16",
     coursework: [
       "Data Structures",
       "Computer Networks",

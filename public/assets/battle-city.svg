@@ -1,0 +1,44 @@
+<svg width="370" height="370" viewBox="0 0 370 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="370" height="370" fill="#09090b" />
+  <rect x="15" y="15" width="340" height="340" rx="12" stroke="#27272a" stroke-width="1.5" />
+  <defs>
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#18181b" />
+    </pattern>
+    <pattern id="brick" width="16" height="10" patternUnits="userSpaceOnUse">
+      <rect width="16" height="10" fill="#121215" />
+      <path d="M 0 0.5 h 16 M 0 5.5 h 16 M 8 0.5 v 5 M 0 5.5 v 5" stroke="#3f3f46" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect x="16" y="16" width="338" height="338" rx="11" fill="url(#dot-grid)" />
+
+  <!-- brick walls -->
+  <rect x="50" y="60" width="48" height="90" fill="url(#brick)" stroke="#3f3f46" stroke-width="1" />
+  <rect x="272" y="60" width="48" height="90" fill="url(#brick)" stroke="#3f3f46" stroke-width="1" />
+  <rect x="160" y="110" width="50" height="30" fill="url(#brick)" stroke="#3f3f46" stroke-width="1" />
+
+  <!-- player tank (green) facing up -->
+  <g id="tank-1">
+    <rect x="120" y="205" width="10" height="44" rx="2" fill="#121215" stroke="#10b981" stroke-width="1.5" />
+    <rect x="160" y="205" width="10" height="44" rx="2" fill="#121215" stroke="#10b981" stroke-width="1.5" />
+    <rect x="130" y="212" width="30" height="30" rx="4" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="145" cy="227" r="7" stroke="#10b981" stroke-width="1.5" fill="none" />
+    <rect x="142" y="186" width="6" height="34" rx="1" fill="#10b981" />
+  </g>
+  <!-- shell -->
+  <rect x="143" y="160" width="4" height="10" rx="1" fill="#d4d4d8" />
+
+  <!-- second player tank (grey) facing up -->
+  <g id="tank-2">
+    <rect x="200" y="215" width="9" height="38" rx="2" fill="#121215" stroke="#a1a1aa" stroke-width="1.5" />
+    <rect x="235" y="215" width="9" height="38" rx="2" fill="#121215" stroke="#a1a1aa" stroke-width="1.5" />
+    <rect x="209" y="221" width="26" height="26" rx="4" fill="#121215" stroke="#a1a1aa" stroke-width="1.5" />
+    <circle cx="222" cy="234" r="6" stroke="#a1a1aa" stroke-width="1.5" fill="none" />
+    <rect x="219.5" y="199" width="5" height="28" rx="1" fill="#a1a1aa" />
+  </g>
+
+  <!-- base (eagle) -->
+  <path d="M 172 285 l 13 -12 l 13 12 v 10 h -26 z" stroke="#d4d4d8" stroke-width="1.5" fill="none" />
+
+  <text x="185" y="330" text-anchor="middle" fill="#d4d4d8" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="0.25em">BATTLE CITY ONLINE</text>
+</svg>
